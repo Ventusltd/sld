@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "kind": "declared-bounding-box-layout-input",
-  "library_sha256": "a864d6dd447545ff2d46c373ff7c33e2da9c44f6bbc7152ee3fa5e037bb59e2c",
+  "library_sha256": "305578df6ebc8cc113ccfd906f51b20f402aaf402a9225f5cc54adb3fa41b7aa",
   "components": [
     {
       "id": "ARROW_ACTIVE",

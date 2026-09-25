@@ -1,0 +1,145 @@
+{
+  "schema_version": "sld-pandapower-adapter-plan/1",
+  "implementation_status": "planned_not_executed",
+  "standards_status": "unverified",
+  "production_enabled": false,
+  "source": {
+    "repository": "https://github.com/Ventusltd/pandapower",
+    "parent_repository": "https://github.com/e2nIEE/pandapower",
+    "fork_verified": true,
+    "default_branch": "develop",
+    "revision": "109416d25abb77d75bd3622d7492e1db57ae678e",
+    "commit_date": "2026-04-25T11:27:20Z",
+    "reviewed_on": "2026-09-25",
+    "licence": "BSD-3-Clause",
+    "licence_evidence": "https://github.com/Ventusltd/pandapower/blob/109416d25abb77d75bd3622d7492e1db57ae678e/LICENSE",
+    "github_api_licence_classifier": "NOASSERTION",
+    "inspected_paths": [
+      "LICENSE",
+      "pandapower/create/bus_create.py",
+      "pandapower/create/line_create.py",
+      "pandapower/create/trafo_create.py",
+      "pandapower/create/switch_create.py"
+    ]
+  },
+  "symbol_library": {
+    "catalogue": "data/library.json",
+    "upstream": "https://github.com/powsybl/powsybl-diagram",
+    "revision": "952186b5b34d1e4e472a04fb663b3654b54e3022",
+    "licence": "MPL-2.0",
+    "anchor_bindings": "unresolved_pending_review",
+    "standards_status": "unverified",
+    "production_enabled": false
+  },
+  "type_mappings": {
+    "bus": {
+      "b": "BUSBAR_SECTION",
+      "n": "NODE",
+      "m": null,
+      "unknown": null
+    },
+    "line": {
+      "component_id": null,
+      "render_primitive": "polyline",
+      "endpoint_fields": ["from_bus", "to_bus"]
+    },
+    "trafo": {
+      "component_id": "TWO_WINDINGS_TRANSFORMER",
+      "endpoint_fields": ["hv_bus", "lv_bus"]
+    },
+    "trafo3w": {
+      "component_id": "THREE_WINDINGS_TRANSFORMER",
+      "endpoint_fields": ["hv_bus", "mv_bus", "lv_bus"]
+    },
+    "switch": {
+      "CB": "BREAKER",
+      "DS": "DISCONNECTOR",
+      "LBS": "LOAD_BREAK_SWITCH",
+      "LS": null,
+      "unknown": null
+    }
+  },
+  "switch_endpoints": {
+    "b": {"target_table": "bus", "target_key": "element"},
+    "l": {"target_table": "line", "target_key": "element", "match_bus_to": ["from_bus", "to_bus"]},
+    "t": {"target_table": "trafo", "target_key": "element", "match_bus_to": ["hv_bus", "lv_bus"]},
+    "t3": {"target_table": "trafo3w", "target_key": "element", "match_bus_to": ["hv_bus", "mv_bus", "lv_bus"]}
+  },
+  "state_mapping": {
+    "switch.closed=true": "CLOSED",
+    "switch.closed=false": "OPEN",
+    "unknown": "reject_or_record_unresolved",
+    "normal_open": "unknown_unless_separately_sourced"
+  },
+  "policies": {
+    "stable_id": "dataset_id/table/source_index; terminal adds endpoint_role",
+    "unknown_or_unsupported_type": "record_unresolved_without_semantic_substitution",
+    "ambiguous_endpoint": "reject",
+    "multiple_switches_at_same_branch_endpoint": "record_unresolved_without_inventing_series_order",
+    "source_code_execution": "not_permitted_during_acquisition",
+    "approved_project_drawing": null,
+    "production_gate": "per-part engineering review and approved project drawing issued after 2012",
+    "gpu_receipt_scope": "existing receipt covers declared bounding-box comparison only"
+  },
+  "output_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Proposed SLD network adapter output; not the browser draft format",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["schema_version", "dataset_id", "source_revision", "standards_status", "production_enabled", "equipment", "terminals", "connectivity_nodes", "unresolved"],
+    "properties": {
+      "schema_version": {"const": "sld-network-adapter-output/1"},
+      "dataset_id": {"type": "string", "minLength": 1},
+      "source_revision": {"const": "109416d25abb77d75bd3622d7492e1db57ae678e"},
+      "standards_status": {"const": "unverified"},
+      "production_enabled": {"const": false},
+      "equipment": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "source_table", "source_index", "component_id", "render_primitive", "state", "in_service", "parameters"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "source_table": {"enum": ["bus", "line", "trafo", "trafo3w", "switch"]},
+            "source_index": {"type": "integer"},
+            "component_id": {"enum": [null, "BUSBAR_SECTION", "NODE", "TWO_WINDINGS_TRANSFORMER", "THREE_WINDINGS_TRANSFORMER", "BREAKER", "DISCONNECTOR", "LOAD_BREAK_SWITCH"]},
+            "render_primitive": {"enum": [null, "polyline"]},
+            "state": {"enum": [null, "OPEN", "CLOSED"]},
+            "in_service": {"type": ["boolean", "null"]},
+            "parameters": {"type": "object", "description": "Preserved source parameters with explicit units; no inferred ratings."}
+          }
+        }
+      },
+      "terminals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "equipment_id", "endpoint_role", "connectivity_node_id", "anchor_binding"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "equipment_id": {"type": "string", "minLength": 1},
+            "endpoint_role": {"type": "string", "minLength": 1},
+            "connectivity_node_id": {"type": ["string", "null"]},
+            "anchor_binding": {"const": null}
+          }
+        }
+      },
+      "connectivity_nodes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "source_bus_index", "synthetic"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "source_bus_index": {"type": ["integer", "null"]},
+            "synthetic": {"type": "boolean"}
+          }
+        }
+      },
+      "unresolved": {"type": "array", "items": {"type": "string"}}
+    }
+  }
+}

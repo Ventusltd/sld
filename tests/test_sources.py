@@ -9,7 +9,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from fetch_sources import extract_text_zip, verify_lock, safe_name, download, check_offline, digest
+from fetch_sources import extract_text_zip, verify_lock, safe_name, download, check_offline, digest, decc_licence_evidence
 from build_catalogue import build
 
 
@@ -22,6 +22,17 @@ def archive(files):
 
 
 class AcquisitionTests(unittest.TestCase):
+    def test_decc_evidence_stable_despite_nonce_changes(self):
+        source = next(item for item in json.loads((ROOT / "sources.yaml").read_text())["sources"] if item["id"] == "decc")
+        pdf = next(item["url"] for item in source["files"] if item["name"].endswith(".pdf"))
+        html = f'<h1>{source["title"]}</h1><a href="{pdf}">PDF</a><footer>All content is available under the <a rel="license" href="{source["licence_url"]}">Open Government Licence v3.0</a>, except where otherwise stated <a>Crown copyright</a></footer>'
+        expected = decc_licence_evidence(html.encode(), source)
+        self.assertEqual(expected, decc_licence_evidence((html + '<script nonce="random">analytics=42</script>').encode(), source))
+        self.assertNotIn(b"\r", expected)
+        for changed in (html.replace("Licence v3.0", "Licence v2.0"), html.replace(source["licence_url"], "https://example.org/restricted"), html.replace(pdf, "https://example.org/wrong.pdf")):
+            with self.assertRaises(ValueError):
+                decc_licence_evidence(changed.encode(), source)
+
     def test_offline_detects_local_tampering(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

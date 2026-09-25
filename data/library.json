@@ -1892,20 +1892,20 @@
     {
       "files": [
         {
+          "bytes": 859,
+          "licence": "OGL-UK-3.0",
+          "path": "upstream/decc/licence-evidence.json",
+          "sha256": "5bafab215be70bd038097a85790c7503b42b8eec5ed8cf49cba184394c5be178",
+          "source_id": "decc",
+          "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"
+        },
+        {
           "bytes": 134527,
           "licence": "OGL-UK-3.0",
           "path": "upstream/decc/line_diagram_illustrative_example.pdf",
           "sha256": "f18fe5b2e77bef837d4406f9d76915334c1ff1758e8c3660e6b41594babf1142",
           "source_id": "decc",
           "url": "https://assets.publishing.service.gov.uk/media/5a7e2036ed915d74e6224444/line_diagram_illustrative_example.pdf"
-        },
-        {
-          "bytes": 71151,
-          "licence": "OGL-UK-3.0",
-          "path": "upstream/decc/source-page.txt",
-          "sha256": "f5b50677343e0e446d2014b0850554fd46911cdcb3769a7b2063febb70ca4f9d",
-          "source_id": "decc",
-          "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"
         }
       ],
       "id": "decc",

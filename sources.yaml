@@ -44,7 +44,7 @@
       "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram",
       "max_bytes": 2000000,
       "files": [
-        {"name": "source-page.txt", "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"},
+        {"name": "licence-evidence.json", "transform": "decc-licence-evidence-v1", "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"},
         {"name": "line_diagram_illustrative_example.pdf", "url": "https://assets.publishing.service.gov.uk/media/5a7e2036ed915d74e6224444/line_diagram_illustrative_example.pdf"}
       ]
     }

@@ -4,10 +4,10 @@
   "device": "NVIDIA GeForce RTX 5070 Ti",
   "cupy_version": "14.2.0",
   "cuda_runtime": 12090,
-  "library_sha256": "a864d6dd447545ff2d46c373ff7c33e2da9c44f6bbc7152ee3fa5e037bb59e2c",
+  "library_sha256": "305578df6ebc8cc113ccfd906f51b20f402aaf402a9225f5cc54adb3fa41b7aa",
   "script_sha256": "021d2376f9957c27fb9cd9234f7869ab5adb0ca97577262b32af9b001c243753",
-  "photon_library_sha256": "ce951720f2b5b5f8a009c262eadd1b2e0dc03a113d086b0ba743f7bfedd393dc",
-  "source_lock_sha256": "50afc58abb5c9e9ddaf4280ed93e10329b8d73f82d2f0daf671644c1725d0b15",
+  "photon_library_sha256": "0f289a7668294079d6aaf4f77df205af671fb5be9f752bb2bc30825444051a23",
+  "source_lock_sha256": "578a77bcb6560552b6dd40adabffb19228b4409894d58209ab17d67445aee9e4",
   "channels": [
     "raw CUDA interval intersection",
     "CuPy centre-distance separation"
@@ -28,7 +28,7 @@
       "separated": 1207487220,
       "touching": 283424,
       "overlapping": 4383212,
-      "seconds": 0.8097843999858014
+      "seconds": 0.8073718000086956
     },
     {
       "gap": 2,
@@ -37,7 +37,7 @@
       "separated": 1206261044,
       "touching": 320416,
       "overlapping": 5572396,
-      "seconds": 0.8139128000475466
+      "seconds": 0.8039359000395052
     },
     {
       "gap": 4,
@@ -46,9 +46,9 @@
       "separated": 1204886900,
       "touching": 357408,
       "overlapping": 6909548,
-      "seconds": 0.8134852999937721
+      "seconds": 0.8373479999718256
     }
   ],
-  "setup_seconds": 0.4254050999879837,
-  "whole_seconds": 2.8746200000168756
+  "setup_seconds": 0.40335109998704866,
+  "whole_seconds": 2.8628882999764755
 }

@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import io
 import json
+from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
 import re
 import stat
@@ -16,6 +17,75 @@ import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class EvidencePage(HTMLParser):
+    """Read only document heading, links and visible footer licence statement."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.links = []
+        self.headings = []
+        self.footer = []
+        self.in_heading = False
+        self.in_footer = False
+        self.hidden = 0
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag in {"script", "style"}:
+            self.hidden += 1
+        if tag == "h1":
+            self.in_heading = True
+        if tag == "footer":
+            self.in_footer = True
+        if tag == "a":
+            self.links.append((attrs.get("href", ""), attrs.get("rel", "").split()))
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style"}:
+            self.hidden = max(0, self.hidden - 1)
+        if tag == "h1":
+            self.in_heading = False
+        if tag == "footer":
+            self.in_footer = False
+
+    def handle_data(self, data):
+        if not self.hidden:
+            if self.in_heading:
+                self.headings.append(data)
+            if self.in_footer:
+                self.footer.append(data)
+
+
+def decc_licence_evidence(data, source):
+    """Distil reviewed evidence, excluding changing nonces/navigation/analytics.
+
+    This is a provenance record, not a licence grant or a mirrored source page.
+    The actual PDF bytes remain independently and immutably SHA-256 locked.
+    """
+    page = EvidencePage()
+    page.feed(data.decode("utf-8"))
+    heading = " ".join(" ".join(page.headings).split())
+    footer = " ".join(" ".join(page.footer).split())
+    expected = "All content is available under the Open Government Licence v3.0 , except where otherwise stated"
+    licence_url = source["licence_url"]
+    pdf_url = next(item["url"] for item in source["files"] if item["name"].endswith(".pdf"))
+    if heading != source["title"]:
+        raise ValueError("DECC source title changed")
+    license_links = [url for url, rel in page.links if "license" in rel]
+    if license_links != [licence_url] or expected not in footer or "Crown copyright" not in footer:
+        raise ValueError("DECC source page lacks expected OGL v3.0 / Crown copyright evidence")
+    if pdf_url not in [url for url, _ in page.links]:
+        raise ValueError("DECC source page lacks expected PDF link")
+    evidence = {
+        "schema_version": "1.0", "extractor": "decc-licence-evidence-v1",
+        "title": heading, "source_url": source["url"], "pdf_url": pdf_url,
+        "licence": "OGL-UK-3.0", "licence_url": licence_url,
+        "scope": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+        "copyright": "Crown copyright",
+        "attribution": "Department of Energy & Climate Change, Illustrative example of a sample single line diagram (1 August 2014). Contains public sector information licensed under the Open Government Licence v3.0."
+    }
+    return (json.dumps(evidence, indent=2, sort_keys=True) + "\n").encode("utf-8")
 
 
 def digest(data):
@@ -141,6 +211,10 @@ def acquire(config, output, accept_first=False):
         for item in source["files"]:
             name = safe_name(item["name"])
             data = download(item["url"], source["max_bytes"])
+            if item.get("transform"):
+                if item["transform"] != "decc-licence-evidence-v1" or source["id"] != "decc":
+                    raise ValueError("Unreviewed source transformation")
+                data = decc_licence_evidence(data, source)
             if item.get("md5") and hashlib.md5(data).hexdigest() != item["md5"]:
                 raise ValueError(f"Pinned archive MD5 mismatch: {name}")
             if name.endswith(".pdf") and not data.startswith(b"%PDF-"):
@@ -166,9 +240,6 @@ def acquire(config, output, accept_first=False):
                 raise ValueError("SEND version/licence mismatch")
             for name, data in extract_text_zip(fetched["send_network_dsse.zip"], source["zip_members"]).items():
                 add(source, name, source["files"][1]["url"], data, origin=name)
-        if source["id"] == "decc":
-            if b"open-government-licence/version/3" not in fetched["source-page.txt"]:
-                raise ValueError("DECC source page lacks expected OGL evidence")
     records.sort(key=lambda item: item["path"])
     if previous:
         verify_lock(records, previous)
