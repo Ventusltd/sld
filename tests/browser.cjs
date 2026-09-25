@@ -12,10 +12,16 @@ const base=process.env.BASE_URL||'http://127.0.0.1:8765';
   try{
     const page=await browser.newPage({viewport:{width:1440,height:1000}});
     page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+    const requests=[];page.on('request',request=>requests.push(request.url()));
     await page.goto(base);await page.waitForFunction(()=>document.querySelectorAll('.card').length===35);
     assert.match(await page.locator('.notice').innerText(),/disabled for production/);
-    await page.waitForFunction(()=>document.getElementById('furnace-summary').textContent.includes('distinct cases'));
-    assert.match(await page.locator('#furnace').innerText(),/does not validate the drawing bench/);
+    assert.equal(await page.locator('#furnace').count(),0);
+    assert.doesNotMatch(await page.locator('body').innerText(),/furnace|GPU|photon|receipt/i);
+    assert.equal(requests.some(url=>url.includes('/data/furnace/')),false,'The public UI must not fetch receipts');
+    assert.equal(await page.getByRole('link',{name:'Source code',exact:true}).getAttribute('href'),'https://github.com/Ventusltd/sld');
+    const palette=await page.evaluate(()=>{const body=getComputedStyle(document.body),link=getComputedStyle(document.querySelector('nav a')),button=getComputedStyle(document.querySelector('button'));return {background:body.backgroundColor,text:body.color,link:link.color,font:body.fontFamily,buttonFont:button.fontFamily,highlight:getComputedStyle(document.documentElement).getPropertyValue('--highlight').trim()};});
+    assert.equal(palette.background,'rgb(0, 0, 0)');assert.equal(palette.text,'rgb(255, 255, 255)');assert.equal(palette.link,'rgb(102, 204, 255)');assert.equal(palette.highlight,'#00ffff');
+    assert.equal(palette.font,'ui-monospace, SFMono-Regular, Consolas, monospace');assert.equal(palette.buttonFont,'ui-monospace, monospace');
     await page.locator('.card').first().locator('summary').click();assert.match(await page.locator('.card').first().innerText(),/MPL-2.0/);
     // Each generated SVG is fetched independently, including lazy images below the fold.
     for(const src of await page.locator('.preview').evaluateAll(imgs=>imgs.map(i=>i.getAttribute('src'))))assert.equal((await page.request.get(new URL(src,base+'/').href)).status(),200,src);
