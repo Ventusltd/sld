@@ -1,0 +1,1923 @@
+{
+  "assets": {
+    "css": "upstream/powsybl/components.css"
+  },
+  "components": [
+    {
+      "id": "ARROW_ACTIVE",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-active-power",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/arrow-up.svg",
+          "fileName": "arrow-up.svg",
+          "name": "UP",
+          "styleClass": "sld-arrow-out"
+        },
+        {
+          "asset_path": "upstream/powsybl/arrow-down.svg",
+          "fileName": "arrow-down.svg",
+          "name": "DOWN",
+          "styleClass": "sld-arrow-in"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "ARROW_ACTIVE"
+    },
+    {
+      "id": "ARROW_CURRENT",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-current",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/arrow-up.svg",
+          "fileName": "arrow-up.svg",
+          "name": "UP",
+          "styleClass": "sld-arrow-out"
+        },
+        {
+          "asset_path": "upstream/powsybl/arrow-down.svg",
+          "fileName": "arrow-down.svg",
+          "name": "DOWN",
+          "styleClass": "sld-arrow-in"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "ARROW_CURRENT"
+    },
+    {
+      "id": "ARROW_REACTIVE",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-reactive-power",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/arrow-up.svg",
+          "fileName": "arrow-up.svg",
+          "name": "UP",
+          "styleClass": "sld-arrow-out"
+        },
+        {
+          "asset_path": "upstream/powsybl/arrow-down.svg",
+          "fileName": "arrow-down.svg",
+          "name": "DOWN",
+          "styleClass": "sld-arrow-in"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "ARROW_REACTIVE"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0,
+          "y": -4
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0,
+          "y": 5
+        }
+      ],
+      "id": "BATTERY",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-battery",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/battery.svg",
+          "fileName": "battery.svg",
+          "name": "BATTERY"
+        }
+      ],
+      "transformations": {},
+      "type": "BATTERY"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -10.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 10.0
+        }
+      ],
+      "id": "BREAKER",
+      "production_enabled": false,
+      "size": {
+        "height": 20.0,
+        "width": 20.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-breaker",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/breaker-closed.svg",
+          "fileName": "breaker-closed.svg",
+          "name": "CLOSED",
+          "styleClass": "sld-sw-closed"
+        },
+        {
+          "asset_path": "upstream/powsybl/breaker-open.svg",
+          "fileName": "breaker-open.svg",
+          "name": "OPEN",
+          "styleClass": "sld-sw-open"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "BREAKER"
+    },
+    {
+      "id": "BUSBAR_SECTION",
+      "production_enabled": false,
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-busbar-section",
+      "type": "BUSBAR_SECTION"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 0.0
+        }
+      ],
+      "id": "BUS_CONNECTION",
+      "production_enabled": false,
+      "size": {
+        "height": 8.0,
+        "width": 8.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-bus-connection",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/bus_connection.svg",
+          "fileName": "bus_connection.svg",
+          "name": "BUS_CONNECTION"
+        }
+      ],
+      "transformations": {},
+      "type": "BUS_CONNECTION"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -6.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 6.0
+        }
+      ],
+      "id": "CAPACITOR",
+      "production_enabled": false,
+      "size": {
+        "height": 12.0,
+        "width": 12.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-capacitor",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/capacitor.svg",
+          "fileName": "capacitor.svg",
+          "name": "CAPACITOR"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "CAPACITOR"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 0.0
+        }
+      ],
+      "id": "DISCONNECTOR",
+      "production_enabled": false,
+      "size": {
+        "height": 8.0,
+        "width": 8.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-disconnector",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/disconnector-closed.svg",
+          "fileName": "disconnector-closed.svg",
+          "name": "CLOSED",
+          "styleClass": "sld-sw-closed"
+        },
+        {
+          "asset_path": "upstream/powsybl/disconnector-open.svg",
+          "fileName": "disconnector-open.svg",
+          "name": "OPEN",
+          "styleClass": "sld-sw-open"
+        }
+      ],
+      "type": "DISCONNECTOR"
+    },
+    {
+      "id": "FLASH",
+      "production_enabled": false,
+      "size": {
+        "height": 15.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-flash",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/flash.svg",
+          "fileName": "flash.svg",
+          "name": "FLASH"
+        }
+      ],
+      "transformations": {},
+      "type": "FLASH"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -6.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 6.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": -6.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 6.0,
+          "y": 0.0
+        }
+      ],
+      "id": "GENERATOR",
+      "production_enabled": false,
+      "size": {
+        "height": 12.0,
+        "width": 12.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-generator",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/generator.svg",
+          "fileName": "generator.svg",
+          "name": "GENERATOR"
+        }
+      ],
+      "transformations": {},
+      "type": "GENERATOR"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 10.0
+        }
+      ],
+      "id": "GROUND",
+      "production_enabled": false,
+      "size": {
+        "height": 20.0,
+        "width": 20.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-ground",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/ground.svg",
+          "fileName": "ground.svg",
+          "name": "GROUND"
+        }
+      ],
+      "transformations": {
+        "DOWN": "ROTATION"
+      },
+      "type": "GROUND"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -5.0
+        }
+      ],
+      "id": "GROUND_DISCONNECTION",
+      "production_enabled": false,
+      "size": {
+        "height": 20.0,
+        "width": 56.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-ground-disconnection",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/ground-disconnection-attach.svg",
+          "fileName": "ground-disconnection-attach.svg",
+          "name": "ATTACH",
+          "styleClass": "sld-ground-disconnection-attach"
+        },
+        {
+          "asset_path": "upstream/powsybl/ground-disconnection-ground.svg",
+          "fileName": "ground-disconnection-ground.svg",
+          "name": "GROUND",
+          "styleClass": "sld-ground-disconnection-ground"
+        },
+        {
+          "asset_path": "upstream/powsybl/ground-disconnector-closed.svg",
+          "fileName": "ground-disconnector-closed.svg",
+          "name": "CLOSED",
+          "styleClass": "sld-sw-closed"
+        },
+        {
+          "asset_path": "upstream/powsybl/ground-disconnector-open.svg",
+          "fileName": "ground-disconnector-open.svg",
+          "name": "OPEN",
+          "styleClass": "sld-sw-open"
+        }
+      ],
+      "type": "GROUND_DISCONNECTION"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -4.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 4.0
+        }
+      ],
+      "id": "INDUCTOR",
+      "production_enabled": false,
+      "size": {
+        "height": 9.0,
+        "width": 15.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-inductor",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/inductor.svg",
+          "fileName": "inductor.svg",
+          "name": "INDUCTOR"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "INDUCTOR"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -6.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 6.0
+        }
+      ],
+      "id": "LCC_CONVERTER_STATION",
+      "production_enabled": false,
+      "size": {
+        "height": 8.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-lcc",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/lcc.svg",
+          "fileName": "lcc.svg",
+          "name": "LCC_CONVERTER_STATION"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "LCC_CONVERTER_STATION"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -4.5
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 4.5
+        }
+      ],
+      "id": "LOAD",
+      "production_enabled": false,
+      "size": {
+        "height": 9.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-load",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/load.svg",
+          "fileName": "load.svg",
+          "name": "LOAD"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "LOAD"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -10.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 10.0
+        }
+      ],
+      "id": "LOAD_BREAK_SWITCH",
+      "production_enabled": false,
+      "size": {
+        "height": 20.0,
+        "width": 20.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-load-break-switch",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/load-break-switch-closed.svg",
+          "fileName": "load-break-switch-closed.svg",
+          "name": "CLOSED",
+          "styleClass": "sld-sw-closed"
+        },
+        {
+          "asset_path": "upstream/powsybl/load-break-switch-open.svg",
+          "fileName": "load-break-switch-open.svg",
+          "name": "OPEN",
+          "styleClass": "sld-sw-open"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "LOAD_BREAK_SWITCH"
+    },
+    {
+      "id": "LOCK",
+      "production_enabled": false,
+      "size": {
+        "height": 12.0,
+        "width": 12.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-lock",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/lock.svg",
+          "fileName": "lock.svg",
+          "name": "LOCK"
+        }
+      ],
+      "transformations": {},
+      "type": "LOCK"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "NONE",
+          "x": 0.0,
+          "y": 0.0
+        }
+      ],
+      "id": "NODE",
+      "production_enabled": false,
+      "size": {
+        "height": 8.0,
+        "width": 8.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-node",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/node.svg",
+          "fileName": "node.svg",
+          "name": "NODE"
+        }
+      ],
+      "transformations": {},
+      "type": "NODE"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -7.5
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 7.5
+        }
+      ],
+      "id": "PHASE_SHIFT_TRANSFORMER",
+      "production_enabled": false,
+      "size": {
+        "height": 15.0,
+        "width": 14.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-pst",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/phase-shifter-winding1.svg",
+          "fileName": "phase-shifter-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/phase-shifter-winding2.svg",
+          "fileName": "phase-shifter-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/phase-shifter-arrow.svg",
+          "fileName": "phase-shifter-arrow.svg",
+          "name": "ARROW",
+          "styleClass": "sld-pst-arrow"
+        }
+      ],
+      "transformations": {
+        "DOWN": "ROTATION",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "PHASE_SHIFT_TRANSFORMER"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -6.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 6.0
+        }
+      ],
+      "id": "STATIC_VAR_COMPENSATOR",
+      "production_enabled": false,
+      "size": {
+        "height": 12.0,
+        "width": 12.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-svc",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/svc.svg",
+          "fileName": "svc.svg",
+          "name": "STATIC_VAR_COMPENSATOR"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "STATIC_VAR_COMPENSATOR"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": 0.0,
+          "y": 0.0
+        }
+      ],
+      "id": "TEE_POINT",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-wire",
+      "subComponents": [],
+      "type": "TEE_POINT"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+          "fileName": "3-phase-shifter-arrow.svg",
+          "name": "ARROW1",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_1"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_2",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+          "fileName": "3-phase-shifter-arrow.svg",
+          "name": "ARROW1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+          "fileName": "3-phase-shifter-arrow-2.svg",
+          "name": "ARROW2",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_1_2"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_2_3",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+          "fileName": "3-phase-shifter-arrow.svg",
+          "name": "ARROW1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+          "fileName": "3-phase-shifter-arrow-2.svg",
+          "name": "ARROW2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+          "fileName": "3-phase-shifter-arrow-3.svg",
+          "name": "ARROW3",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_1_2_3"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_3",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+          "fileName": "3-phase-shifter-arrow.svg",
+          "name": "ARROW1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+          "fileName": "3-phase-shifter-arrow-3.svg",
+          "name": "ARROW3",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_1_3"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_2",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+          "fileName": "3-phase-shifter-arrow-2.svg",
+          "name": "ARROW2",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_2"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_2_3",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+          "fileName": "3-phase-shifter-arrow-2.svg",
+          "name": "ARROW2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+          "fileName": "3-phase-shifter-arrow-3.svg",
+          "name": "ARROW3",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_2_3"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "HORIZONTAL",
+          "x": -7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 7.0,
+          "y": 0.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 12.0
+        }
+      ],
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_3",
+      "production_enabled": false,
+      "size": {
+        "height": 24.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-three-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "fileName": "3-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "fileName": "3-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "fileName": "3-windings-transformer-winding3.svg",
+          "name": "WINDING3",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+          "fileName": "3-phase-shifter-arrow-3.svg",
+          "name": "ARROW3",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "FLIP",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "THREE_WINDINGS_TRANSFORMER_PST_3"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -8.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 8.0
+        }
+      ],
+      "id": "TWO_WINDINGS_TRANSFORMER",
+      "production_enabled": false,
+      "size": {
+        "height": 15.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-two-wt",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/2-windings-transformer-winding1.svg",
+          "fileName": "2-windings-transformer-winding1.svg",
+          "name": "WINDING1",
+          "styleClass": "sld-winding"
+        },
+        {
+          "asset_path": "upstream/powsybl/2-windings-transformer-winding2.svg",
+          "fileName": "2-windings-transformer-winding2.svg",
+          "name": "WINDING2",
+          "styleClass": "sld-winding"
+        }
+      ],
+      "transformations": {
+        "DOWN": "ROTATION",
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "TWO_WINDINGS_TRANSFORMER"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -5.5
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 5.5
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": -9.5,
+          "y": 0.0
+        },
+        {
+          "orientation": "HORIZONTAL",
+          "x": 9.5,
+          "y": 0.0
+        }
+      ],
+      "id": "UNKNOWN_COMPONENT",
+      "production_enabled": false,
+      "size": {
+        "height": 20.0,
+        "width": 20.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-unknown",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/unknown-component.svg",
+          "fileName": "unknown-component.svg",
+          "name": "UNKNOWN_COMPONENT"
+        }
+      ],
+      "transformations": {},
+      "type": "UNKNOWN_COMPONENT"
+    },
+    {
+      "id": "VALUE_CURRENT",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-current-value",
+      "type": "VALUE_CURRENT"
+    },
+    {
+      "id": "VALUE_PERMANENT_LIMIT_PERCENTAGE",
+      "production_enabled": false,
+      "size": {
+        "height": 10.0,
+        "width": 10.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-permanent-limit-percentage",
+      "type": "VALUE_PERMANENT_LIMIT_PERCENTAGE"
+    },
+    {
+      "anchorPoints": [
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": -6.0
+        },
+        {
+          "orientation": "VERTICAL",
+          "x": 0.0,
+          "y": 6.0
+        }
+      ],
+      "id": "VSC_CONVERTER_STATION",
+      "production_enabled": false,
+      "size": {
+        "height": 8.0,
+        "width": 16.0
+      },
+      "source_id": "powsybl",
+      "source_ref": "upstream/powsybl/components.json",
+      "standards_status": "unverified",
+      "styleClass": "sld-vsc",
+      "subComponents": [
+        {
+          "asset_path": "upstream/powsybl/vsc.svg",
+          "fileName": "vsc.svg",
+          "name": "VSC_CONVERTER_STATION"
+        }
+      ],
+      "transformations": {
+        "LEFT": "ROTATION",
+        "RIGHT": "ROTATION"
+      },
+      "type": "VSC_CONVERTER_STATION"
+    }
+  ],
+  "counts": {
+    "components": 35,
+    "svg_files": 37
+  },
+  "networks": [
+    {
+      "execution_allowed": false,
+      "files": [
+        "upstream/send/send_network_dsse/buscoords.csv",
+        "upstream/send/send_network_dsse/generators_dsse.dss",
+        "upstream/send/send_network_dsse/linecodes.dss",
+        "upstream/send/send_network_dsse/lines_dsse.dss",
+        "upstream/send/send_network_dsse/loads_dsse.dss",
+        "upstream/send/send_network_dsse/master_dsse.dss",
+        "upstream/send/send_network_dsse/xfmrs_dsse.dss"
+      ],
+      "format": "OpenDSS",
+      "id": "send",
+      "production_enabled": false,
+      "source_id": "send"
+    }
+  ],
+  "production_enabled": false,
+  "references": [
+    {
+      "id": "enwl-lvns",
+      "licence": "unresolved",
+      "note": "25 real LV models dated 2015; public availability does not establish redistribution rights.",
+      "rights_url": "https://www.enwl.co.uk/about-us/terms-and-conditions/",
+      "status": "reference_only",
+      "title": "ENWL / Manchester Low Voltage Network Solutions",
+      "url": "https://www.enwl.co.uk/lvns"
+    },
+    {
+      "id": "southampton-cad",
+      "licence": "unresolved",
+      "note": "Revision B dated 2006-02-02, outside post-2012 drawing subset; current standards under review.",
+      "status": "reference_only",
+      "title": "Southampton CAD protocol",
+      "url": "https://www.southampton.ac.uk/~assets/doc/estates-and-facilities/import/cadprotocol.pdf"
+    },
+    {
+      "id": "uk-mvlv",
+      "licence": "unresolved",
+      "note": "No repository licence established; upstream LVNS rights unresolved.",
+      "status": "reference_only",
+      "title": "Hybrid UK MV/LV models",
+      "url": "https://github.com/deakinmt/uk-mvlv-models"
+    },
+    {
+      "id": "ukpn",
+      "licence": "per_dataset",
+      "note": "Dataset-specific licence and registration requirements must be checked.",
+      "status": "reference_only",
+      "title": "UKPN open-data catalogue",
+      "url": "https://www.ukpowernetworks.co.uk/our-company/open-data-portal"
+    },
+    {
+      "id": "catapult-dsi",
+      "licence": "unresolved",
+      "note": "Data infrastructure context, not a drawing corpus.",
+      "status": "reference_only",
+      "title": "Catapult Data Sharing Infrastructure",
+      "url": "https://es.catapult.org.uk/project/data-sharing-infrastructure/"
+    },
+    {
+      "id": "catapult-guidance",
+      "licence": "unresolved",
+      "note": "Metadata and rights guidance; no drawing assets acquired.",
+      "status": "reference_only",
+      "title": "Catapult Data Best Practice Guidance",
+      "url": "https://es.catapult.org.uk/guide/data-best-practice-guidance/"
+    }
+  ],
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "files": [
+        {
+          "bytes": 158,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/2-windings-transformer-winding1.svg",
+          "sha256": "d0e4ec79b9ea5747f4c8f23b266af628abf6f3ff352bf132100d6e50ff1cc769",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/2-windings-transformer-winding1.svg"
+        },
+        {
+          "bytes": 157,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/2-windings-transformer-winding2.svg",
+          "sha256": "e8832ab597f193c2bbd3422246f4bd786544133eaa92b11967733626a0f57a4b",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/2-windings-transformer-winding2.svg"
+        },
+        {
+          "bytes": 153,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+          "sha256": "1d1a64abac2ad2a9ec7b8c0fa44fadcdf6aa8087942ee9720c5e91d51db89316",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow-2.svg"
+        },
+        {
+          "bytes": 166,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+          "sha256": "6f5cffbf8cbe7ea8a92ef68bc651beae7a648eed085909be3aa9ba07abaf751a",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow-3.svg"
+        },
+        {
+          "bytes": 149,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+          "sha256": "a5ceddee546a294a430d151c8832926505e8669f6622896c68f3cdc311b8cce6",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow.svg"
+        },
+        {
+          "bytes": 158,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+          "sha256": "677d5abe9c2988d0b015bb2feb9ce41d84aa25991d76adbcb7f13abc52d64bdc",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding1.svg"
+        },
+        {
+          "bytes": 159,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+          "sha256": "a8cf3ff05c99c91b31f6cd1356637c8f719651e5b63611961281d85a7e99fff9",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding2.svg"
+        },
+        {
+          "bytes": 158,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+          "sha256": "470b2cba1b2af34c3fce5048c2d10b8e39f74398b08a8fa4ad6359dd55b740ce",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding3.svg"
+        },
+        {
+          "bytes": 16725,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/LICENSE"
+        },
+        {
+          "bytes": 109,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/arrow-down.svg",
+          "sha256": "18a4987ac423c77758e928e778e09c7cc4b7d15669002228b3dc8c43a13d4ed6",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/arrow-down.svg"
+        },
+        {
+          "bytes": 110,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/arrow-up.svg",
+          "sha256": "58036e30af71add50894122071cdd0d32a31c04a445ca2b9f227bea8a60e3b9c",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/arrow-up.svg"
+        },
+        {
+          "bytes": 218,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/battery.svg",
+          "sha256": "4e243ff6396f44c711d4b4aabcc9c012c79a47421e313a017b6e0540899a412f",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/battery.svg"
+        },
+        {
+          "bytes": 151,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/breaker-closed.svg",
+          "sha256": "670bfc95b4743d9b56f70a478de4a1c1b3fa79ed94399d668753bc7a3cb823cb",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/breaker-closed.svg"
+        },
+        {
+          "bytes": 151,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/breaker-open.svg",
+          "sha256": "678c129054a9ebef77cfb64d6816176ece8f15d9df20e31e15439e8bee5e70f9",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/breaker-open.svg"
+        },
+        {
+          "bytes": 184,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/bus_connection.svg",
+          "sha256": "0a923e4f5505addd682945e7e4e371f00e737a720cce7fffaa789ec03cd177e7",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/bus_connection.svg"
+        },
+        {
+          "bytes": 299,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/capacitor.svg",
+          "sha256": "914c3aaf7fc96ebc8b5cbe032c3d5f64bbb52b2677d1c0ff42d614da5de641e1",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/capacitor.svg"
+        },
+        {
+          "bytes": 3127,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/components.css",
+          "sha256": "9bc654d68525d51d47a83b08600682d73db462efd34226533dca75c0ee5cae5e",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.css"
+        },
+        {
+          "bytes": 21007,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/components.json",
+          "sha256": "62a76cc4a90119ca33ee6845a59823f95c7ac398dca14bc61412006ab63cd4bf",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.json"
+        },
+        {
+          "bytes": 141,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/disconnector-closed.svg",
+          "sha256": "fcc40aa59ffbb750beeabc40e165020fd22986c46d212e81d5607ce5b2810878",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/disconnector-closed.svg"
+        },
+        {
+          "bytes": 132,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/disconnector-open.svg",
+          "sha256": "f95c1ea8b74414df659c47b21c76fce5c18c0bf9e15a4b14d54c7f60f32337ef",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/disconnector-open.svg"
+        },
+        {
+          "bytes": 212,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/flash.svg",
+          "sha256": "6ee01e8fcd6b102c59283022ec16b296035add82cca64ba1a253a5b0aa431155",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/flash.svg"
+        },
+        {
+          "bytes": 235,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/generator.svg",
+          "sha256": "c1baa7416cc9cb8ccd0e7a26d33735b1ea764852d880553a53656c6a8f3a28c1",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/generator.svg"
+        },
+        {
+          "bytes": 134,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/ground-disconnection-attach.svg",
+          "sha256": "488f5386c8af87807b900f1a8545c23f3970003383438e8d02cdcb9688e69009",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnection-attach.svg"
+        },
+        {
+          "bytes": 171,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/ground-disconnection-ground.svg",
+          "sha256": "420deed4a1e686acf71ad29204d01e34116f8a2b245a5742d5653bdc7724430a",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnection-ground.svg"
+        },
+        {
+          "bytes": 146,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/ground-disconnector-closed.svg",
+          "sha256": "249a761b527b78c3f1a822e3e673b733f475062a8b66af9c07b93c09fcfe3c12",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnector-closed.svg"
+        },
+        {
+          "bytes": 135,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/ground-disconnector-open.svg",
+          "sha256": "266837a6bf45a2fa0b9f73bddcd0e037ddb03a05510f19f53f63b0038e841cba",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnector-open.svg"
+        },
+        {
+          "bytes": 180,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/ground.svg",
+          "sha256": "2686057f395e268dd43a447428997631c4f31b453ab47d0c71ca316f0d25ffc9",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground.svg"
+        },
+        {
+          "bytes": 239,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/inductor.svg",
+          "sha256": "e1cc517bb066d4054ca80013353e8e0991c864fe643900ac8ac729305b07e5f3",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/inductor.svg"
+        },
+        {
+          "bytes": 187,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/lcc.svg",
+          "sha256": "e855b7cd74c8873a79e6f15e27a00d740ecb04aec9f701c20f4f9eb831bf0dd0",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/lcc.svg"
+        },
+        {
+          "bytes": 163,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/load-break-switch-closed.svg",
+          "sha256": "9948c65ac9b3f87135b71cfc8300c517cfc4c964168088fe31a7c8ce6b50c917",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load-break-switch-closed.svg"
+        },
+        {
+          "bytes": 163,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/load-break-switch-open.svg",
+          "sha256": "b8f48847d9f20e79836924f4e2a18698db1ccd8169c7e9876cdc8b2bd753afb0",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load-break-switch-open.svg"
+        },
+        {
+          "bytes": 238,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/load.svg",
+          "sha256": "02a082ca88893b44f3225b95d5440224235ac534334f683b333b234dfe02c2b2",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load.svg"
+        },
+        {
+          "bytes": 606,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/lock.svg",
+          "sha256": "d2ea2ba715253f096afdb39b6dd8967e7f706c418d24adae606ed60b56cb11c1",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/lock.svg"
+        },
+        {
+          "bytes": 156,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/node.svg",
+          "sha256": "97dbd78fc8a6e96c5ec26ebca1f70ce476cc5e0584e1a89bc24d87f031eb83a8",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/node.svg"
+        },
+        {
+          "bytes": 152,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/phase-shifter-arrow.svg",
+          "sha256": "1d5dd4d03936a90fa2a3dd69eb9c8cc73d7a636cc3da0ef2c304a4c8d9cce3fe",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-arrow.svg"
+        },
+        {
+          "bytes": 144,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/phase-shifter-winding1.svg",
+          "sha256": "ed9fa64f4d683601acf0813df002273e81a1679da5d402322998ab6c068859a3",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-winding1.svg"
+        },
+        {
+          "bytes": 143,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/phase-shifter-winding2.svg",
+          "sha256": "3ca62bb86ec18a2aa811fc4516ec14316a3e80aab56b64565df03257436bcbd9",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-winding2.svg"
+        },
+        {
+          "bytes": 361,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/svc.svg",
+          "sha256": "85e128e6a4d320d86810482fb3137634dcfd46cb58bb12703dbd6479f5072b44",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/svc.svg"
+        },
+        {
+          "bytes": 383,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/unknown-component.svg",
+          "sha256": "d6c7af0fec743a0c0de1bb94b23df7b5f5ba76257a618e131de94cc852ed07af",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/unknown-component.svg"
+        },
+        {
+          "bytes": 189,
+          "licence": "MPL-2.0",
+          "path": "upstream/powsybl/vsc.svg",
+          "sha256": "7e1525e89f3f0060b8449c9d3b1d2bcb28a3ffca54e8364c20d6960042eb7811",
+          "source_id": "powsybl",
+          "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/vsc.svg"
+        }
+      ],
+      "id": "powsybl",
+      "kind": "component_library",
+      "licence": "MPL-2.0",
+      "production_enabled": false,
+      "revision": "952186b5b34d1e4e472a04fb663b3654b54e3022",
+      "standards_status": "unverified",
+      "status": "acquired",
+      "title": "PowSyBl ConvergenceLibrary",
+      "url": "https://github.com/powsybl/powsybl-diagram/tree/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary"
+    },
+    {
+      "files": [
+        {
+          "bytes": 5122,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/metadata.json",
+          "sha256": "709e5994fb1270bd213b59d5dac055bf13b9338032674fd159dcf45446d8ced0",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/articles/21618342/versions/1"
+        },
+        {
+          "bytes": 4032,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse.zip",
+          "sha256": "016e94fc5fb4763b76958b23054c3de07a1b2b1b5ca2291a649f94e6edf3257a",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/buscoords.csv",
+          "bytes": 1552,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/buscoords.csv",
+          "sha256": "b8a7e94e01eed295ed7920c43bd33dd6a353172b90801bbca127b775ed4f60d0",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/generators_dsse.dss",
+          "bytes": 285,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/generators_dsse.dss",
+          "sha256": "0d1738c2fd10683fbf9e2d93492852a237ad1db4a729338c78dca29c19e1bbc6",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/linecodes.dss",
+          "bytes": 1256,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/linecodes.dss",
+          "sha256": "62bd64352297f0c938265aab68708d64d797d3a5dfe89a7aa5a8e28324c583a1",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/lines_dsse.dss",
+          "bytes": 3205,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/lines_dsse.dss",
+          "sha256": "f96f230477eb9c22934b9ea86e53d3533858f9969fde7cfcd3324e0f7a86ba4c",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/loads_dsse.dss",
+          "bytes": 2371,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/loads_dsse.dss",
+          "sha256": "a2f65ec16f52e83d2b53cd08dadb7ea7a68de7b65b1c43961f07393c983ac880",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/master_dsse.dss",
+          "bytes": 1067,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/master_dsse.dss",
+          "sha256": "86d635df4e6d86f3d8b12a4fc632e3f77ea6b75238ffd0c9571bd6aa27aa1b40",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        },
+        {
+          "archive_member": "send_network_dsse/xfmrs_dsse.dss",
+          "bytes": 2282,
+          "licence": "CC-BY-4.0",
+          "path": "upstream/send/send_network_dsse/xfmrs_dsse.dss",
+          "sha256": "b31ed1cd905c7555d2d0e28d86e38ffa8446dbecdea54138fad49f923133e151",
+          "source_id": "send",
+          "url": "https://api.figshare.com/v2/file/download/38313285"
+        }
+      ],
+      "id": "send",
+      "kind": "network_model",
+      "licence": "CC-BY-4.0",
+      "production_enabled": false,
+      "revision": "10.25405/data.ncl.21618342.v1",
+      "standards_status": "unverified",
+      "status": "acquired",
+      "title": "Network Model for a Smart Energy Network Digital Twin",
+      "url": "https://data.ncl.ac.uk/articles/model/Network_Model_for_a_Smart_Energy_Network_Digital_Twin/21618342/1"
+    },
+    {
+      "files": [
+        {
+          "bytes": 134527,
+          "licence": "OGL-UK-3.0",
+          "path": "upstream/decc/line_diagram_illustrative_example.pdf",
+          "sha256": "f18fe5b2e77bef837d4406f9d76915334c1ff1758e8c3660e6b41594babf1142",
+          "source_id": "decc",
+          "url": "https://assets.publishing.service.gov.uk/media/5a7e2036ed915d74e6224444/line_diagram_illustrative_example.pdf"
+        },
+        {
+          "bytes": 71151,
+          "licence": "OGL-UK-3.0",
+          "path": "upstream/decc/source-page.txt",
+          "sha256": "f5b50677343e0e446d2014b0850554fd46911cdcb3769a7b2063febb70ca4f9d",
+          "source_id": "decc",
+          "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"
+        }
+      ],
+      "id": "decc",
+      "kind": "illustrative_drawing",
+      "licence": "OGL-UK-3.0",
+      "production_enabled": false,
+      "revision": "2014-08-01",
+      "standards_status": "unverified",
+      "status": "acquired",
+      "title": "Illustrative example of a sample single line diagram",
+      "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"
+    }
+  ],
+  "standards_status": "unverified"
+}

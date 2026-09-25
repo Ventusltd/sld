@@ -1,0 +1,80 @@
+name: Verify and publish SLD library
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sld-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Verify pinned local sources and deterministic catalogue
+        run: |
+          python scripts/fetch_sources.py --check-offline
+          python scripts/build_catalogue.py
+          git diff --exit-code -- data/library.json data/source-lock.json
+          python -m unittest discover -s tests -p 'test_*.py'
+      - name: Verify exact GPU furnace acceptance
+        run: python scripts/verify_furnace.py
+      - name: Build allowlisted static site
+        run: python scripts/build_site.py --out dist
+      - name: Install browser test dependencies
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Test published artifact in Chromium
+        env:
+          BASE_URL: http://127.0.0.1:8765
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory dist > /tmp/sld-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8765/ > /dev/null; then break; fi
+            sleep 1
+          done
+          node tests/browser.cjs
+      - name: Retain browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sld-browser-evidence
+          path: artifacts
+          if-no-files-found: ignore
+      - name: Upload verified Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish the verified artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

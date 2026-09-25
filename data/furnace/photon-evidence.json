@@ -1,0 +1,54 @@
+{
+  "accepted": true,
+  "scope": "Declared bounding boxes only; no electrical approval, routing, SVG ink or label collision certification.",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "cupy_version": "14.2.0",
+  "cuda_runtime": 12090,
+  "library_sha256": "20009f16dd31511436c7b433257ccab2dd7d1613cb8d603c7cee95292b54fa08",
+  "script_sha256": "ed3e317f13edd6715d1a78bb65d929007d9b6f8daae0b0740e3b226e2a69394a",
+  "photon_library_sha256": "8fe7be623d48254d3b270274989d19252b4bde69099e147189d33952b160e71a",
+  "source_lock_sha256": "50afc58abb5c9e9ddaf4280ed93e10329b8d73f82d2f0daf671644c1725d0b15",
+  "channels": [
+    "raw CUDA interval intersection",
+    "CuPy centre-distance separation"
+  ],
+  "cpu_reference_cases": 8192,
+  "threshold_fixtures": 9,
+  "injected_error_detected": true,
+  "grid": 1024,
+  "pitch": 0.5,
+  "component_count": 34,
+  "excluded_component_count": 1,
+  "unique_cases": 3636461568,
+  "iterations": [
+    {
+      "gap": 0,
+      "unique_cases": 1212153856,
+      "mismatches": 0,
+      "separated": 1207487220,
+      "touching": 283424,
+      "overlapping": 4383212,
+      "seconds": 0.8152802000404336
+    },
+    {
+      "gap": 2,
+      "unique_cases": 1212153856,
+      "mismatches": 0,
+      "separated": 1206261044,
+      "touching": 320416,
+      "overlapping": 5572396,
+      "seconds": 0.8115421999827959
+    },
+    {
+      "gap": 4,
+      "unique_cases": 1212153856,
+      "mismatches": 0,
+      "separated": 1204886900,
+      "touching": 357408,
+      "overlapping": 6909548,
+      "seconds": 0.8176295000012033
+    }
+  ],
+  "setup_seconds": 0.3891624000389129,
+  "whole_seconds": 2.853023100004066
+}

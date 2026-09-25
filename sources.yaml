@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "format_note": "JSON-compatible YAML; parsed with Python standard-library json, no YAML dependency.",
+  "sources": [
+    {
+      "id": "powsybl",
+      "title": "PowSyBl ConvergenceLibrary",
+      "kind": "component_library",
+      "revision": "952186b5b34d1e4e472a04fb663b3654b54e3022",
+      "licence": "MPL-2.0",
+      "url": "https://github.com/powsybl/powsybl-diagram/tree/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary",
+      "base_url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/",
+      "expected_components": 35,
+      "expected_svgs": 37,
+      "max_bytes": 2000000,
+      "files": [
+        {"name": "components.json", "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.json"},
+        {"name": "components.css", "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.css"},
+        {"name": "LICENSE", "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/LICENSE"}
+      ]
+    },
+    {
+      "id": "send",
+      "title": "Network Model for a Smart Energy Network Digital Twin",
+      "kind": "network_model",
+      "revision": "10.25405/data.ncl.21618342.v1",
+      "licence": "CC-BY-4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://data.ncl.ac.uk/articles/model/Network_Model_for_a_Smart_Energy_Network_Digital_Twin/21618342/1",
+      "max_bytes": 1000000,
+      "files": [
+        {"name": "metadata.json", "url": "https://api.figshare.com/v2/articles/21618342/versions/1"},
+        {"name": "send_network_dsse.zip", "url": "https://api.figshare.com/v2/file/download/38313285", "md5": "48d8483d91b68b8b6f6d43b829558368"}
+      ],
+      "zip_members": ["send_network_dsse/buscoords.csv", "send_network_dsse/generators_dsse.dss", "send_network_dsse/linecodes.dss", "send_network_dsse/lines_dsse.dss", "send_network_dsse/loads_dsse.dss", "send_network_dsse/master_dsse.dss", "send_network_dsse/xfmrs_dsse.dss"]
+    },
+    {
+      "id": "decc",
+      "title": "Illustrative example of a sample single line diagram",
+      "kind": "illustrative_drawing",
+      "revision": "2014-08-01",
+      "licence": "OGL-UK-3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram",
+      "max_bytes": 2000000,
+      "files": [
+        {"name": "source-page.txt", "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram"},
+        {"name": "line_diagram_illustrative_example.pdf", "url": "https://assets.publishing.service.gov.uk/media/5a7e2036ed915d74e6224444/line_diagram_illustrative_example.pdf"}
+      ]
+    }
+  ],
+  "references": [
+    {"id": "enwl-lvns", "title": "ENWL / Manchester Low Voltage Network Solutions", "url": "https://www.enwl.co.uk/lvns", "status": "reference_only", "licence": "unresolved", "note": "25 real LV models dated 2015; public availability does not establish redistribution rights.", "rights_url": "https://www.enwl.co.uk/about-us/terms-and-conditions/"},
+    {"id": "southampton-cad", "title": "Southampton CAD protocol", "url": "https://www.southampton.ac.uk/~assets/doc/estates-and-facilities/import/cadprotocol.pdf", "status": "reference_only", "licence": "unresolved", "note": "Revision B dated 2006-02-02, outside post-2012 drawing subset; current standards under review."},
+    {"id": "uk-mvlv", "title": "Hybrid UK MV/LV models", "url": "https://github.com/deakinmt/uk-mvlv-models", "status": "reference_only", "licence": "unresolved", "note": "No repository licence established; upstream LVNS rights unresolved."},
+    {"id": "ukpn", "title": "UKPN open-data catalogue", "url": "https://www.ukpowernetworks.co.uk/our-company/open-data-portal", "status": "reference_only", "licence": "per_dataset", "note": "Dataset-specific licence and registration requirements must be checked."},
+    {"id": "catapult-dsi", "title": "Catapult Data Sharing Infrastructure", "url": "https://es.catapult.org.uk/project/data-sharing-infrastructure/", "status": "reference_only", "licence": "unresolved", "note": "Data infrastructure context, not a drawing corpus."},
+    {"id": "catapult-guidance", "title": "Catapult Data Best Practice Guidance", "url": "https://es.catapult.org.uk/guide/data-best-practice-guidance/", "status": "reference_only", "licence": "unresolved", "note": "Metadata and rights guidance; no drawing assets acquired."}
+  ]
+}

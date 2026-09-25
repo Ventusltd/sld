@@ -1,0 +1,420 @@
+{
+  "schema_version": "1.0",
+  "files": [
+    {
+      "path": "upstream/decc/line_diagram_illustrative_example.pdf",
+      "source_id": "decc",
+      "url": "https://assets.publishing.service.gov.uk/media/5a7e2036ed915d74e6224444/line_diagram_illustrative_example.pdf",
+      "sha256": "f18fe5b2e77bef837d4406f9d76915334c1ff1758e8c3660e6b41594babf1142",
+      "bytes": 134527,
+      "licence": "OGL-UK-3.0"
+    },
+    {
+      "path": "upstream/decc/source-page.txt",
+      "source_id": "decc",
+      "url": "https://www.gov.uk/government/publications/illustrative-example-of-a-sample-single-line-diagram",
+      "sha256": "f5b50677343e0e446d2014b0850554fd46911cdcb3769a7b2063febb70ca4f9d",
+      "bytes": 71151,
+      "licence": "OGL-UK-3.0"
+    },
+    {
+      "path": "upstream/powsybl/2-windings-transformer-winding1.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/2-windings-transformer-winding1.svg",
+      "sha256": "d0e4ec79b9ea5747f4c8f23b266af628abf6f3ff352bf132100d6e50ff1cc769",
+      "bytes": 158,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/2-windings-transformer-winding2.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/2-windings-transformer-winding2.svg",
+      "sha256": "e8832ab597f193c2bbd3422246f4bd786544133eaa92b11967733626a0f57a4b",
+      "bytes": 157,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-phase-shifter-arrow-2.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow-2.svg",
+      "sha256": "1d1a64abac2ad2a9ec7b8c0fa44fadcdf6aa8087942ee9720c5e91d51db89316",
+      "bytes": 153,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-phase-shifter-arrow-3.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow-3.svg",
+      "sha256": "6f5cffbf8cbe7ea8a92ef68bc651beae7a648eed085909be3aa9ba07abaf751a",
+      "bytes": 166,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-phase-shifter-arrow.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-phase-shifter-arrow.svg",
+      "sha256": "a5ceddee546a294a430d151c8832926505e8669f6622896c68f3cdc311b8cce6",
+      "bytes": 149,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-windings-transformer-winding1.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding1.svg",
+      "sha256": "677d5abe9c2988d0b015bb2feb9ce41d84aa25991d76adbcb7f13abc52d64bdc",
+      "bytes": 158,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-windings-transformer-winding2.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding2.svg",
+      "sha256": "a8cf3ff05c99c91b31f6cd1356637c8f719651e5b63611961281d85a7e99fff9",
+      "bytes": 159,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/3-windings-transformer-winding3.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/3-windings-transformer-winding3.svg",
+      "sha256": "470b2cba1b2af34c3fce5048c2d10b8e39f74398b08a8fa4ad6359dd55b740ce",
+      "bytes": 158,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/LICENSE",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/LICENSE",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "bytes": 16725,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/arrow-down.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/arrow-down.svg",
+      "sha256": "18a4987ac423c77758e928e778e09c7cc4b7d15669002228b3dc8c43a13d4ed6",
+      "bytes": 109,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/arrow-up.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/arrow-up.svg",
+      "sha256": "58036e30af71add50894122071cdd0d32a31c04a445ca2b9f227bea8a60e3b9c",
+      "bytes": 110,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/battery.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/battery.svg",
+      "sha256": "4e243ff6396f44c711d4b4aabcc9c012c79a47421e313a017b6e0540899a412f",
+      "bytes": 218,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/breaker-closed.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/breaker-closed.svg",
+      "sha256": "670bfc95b4743d9b56f70a478de4a1c1b3fa79ed94399d668753bc7a3cb823cb",
+      "bytes": 151,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/breaker-open.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/breaker-open.svg",
+      "sha256": "678c129054a9ebef77cfb64d6816176ece8f15d9df20e31e15439e8bee5e70f9",
+      "bytes": 151,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/bus_connection.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/bus_connection.svg",
+      "sha256": "0a923e4f5505addd682945e7e4e371f00e737a720cce7fffaa789ec03cd177e7",
+      "bytes": 184,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/capacitor.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/capacitor.svg",
+      "sha256": "914c3aaf7fc96ebc8b5cbe032c3d5f64bbb52b2677d1c0ff42d614da5de641e1",
+      "bytes": 299,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/components.css",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.css",
+      "sha256": "9bc654d68525d51d47a83b08600682d73db462efd34226533dca75c0ee5cae5e",
+      "bytes": 3127,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/components.json",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/components.json",
+      "sha256": "62a76cc4a90119ca33ee6845a59823f95c7ac398dca14bc61412006ab63cd4bf",
+      "bytes": 21007,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/disconnector-closed.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/disconnector-closed.svg",
+      "sha256": "fcc40aa59ffbb750beeabc40e165020fd22986c46d212e81d5607ce5b2810878",
+      "bytes": 141,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/disconnector-open.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/disconnector-open.svg",
+      "sha256": "f95c1ea8b74414df659c47b21c76fce5c18c0bf9e15a4b14d54c7f60f32337ef",
+      "bytes": 132,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/flash.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/flash.svg",
+      "sha256": "6ee01e8fcd6b102c59283022ec16b296035add82cca64ba1a253a5b0aa431155",
+      "bytes": 212,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/generator.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/generator.svg",
+      "sha256": "c1baa7416cc9cb8ccd0e7a26d33735b1ea764852d880553a53656c6a8f3a28c1",
+      "bytes": 235,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/ground-disconnection-attach.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnection-attach.svg",
+      "sha256": "488f5386c8af87807b900f1a8545c23f3970003383438e8d02cdcb9688e69009",
+      "bytes": 134,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/ground-disconnection-ground.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnection-ground.svg",
+      "sha256": "420deed4a1e686acf71ad29204d01e34116f8a2b245a5742d5653bdc7724430a",
+      "bytes": 171,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/ground-disconnector-closed.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnector-closed.svg",
+      "sha256": "249a761b527b78c3f1a822e3e673b733f475062a8b66af9c07b93c09fcfe3c12",
+      "bytes": 146,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/ground-disconnector-open.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground-disconnector-open.svg",
+      "sha256": "266837a6bf45a2fa0b9f73bddcd0e037ddb03a05510f19f53f63b0038e841cba",
+      "bytes": 135,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/ground.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/ground.svg",
+      "sha256": "2686057f395e268dd43a447428997631c4f31b453ab47d0c71ca316f0d25ffc9",
+      "bytes": 180,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/inductor.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/inductor.svg",
+      "sha256": "e1cc517bb066d4054ca80013353e8e0991c864fe643900ac8ac729305b07e5f3",
+      "bytes": 239,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/lcc.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/lcc.svg",
+      "sha256": "e855b7cd74c8873a79e6f15e27a00d740ecb04aec9f701c20f4f9eb831bf0dd0",
+      "bytes": 187,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/load-break-switch-closed.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load-break-switch-closed.svg",
+      "sha256": "9948c65ac9b3f87135b71cfc8300c517cfc4c964168088fe31a7c8ce6b50c917",
+      "bytes": 163,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/load-break-switch-open.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load-break-switch-open.svg",
+      "sha256": "b8f48847d9f20e79836924f4e2a18698db1ccd8169c7e9876cdc8b2bd753afb0",
+      "bytes": 163,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/load.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/load.svg",
+      "sha256": "02a082ca88893b44f3225b95d5440224235ac534334f683b333b234dfe02c2b2",
+      "bytes": 238,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/lock.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/lock.svg",
+      "sha256": "d2ea2ba715253f096afdb39b6dd8967e7f706c418d24adae606ed60b56cb11c1",
+      "bytes": 606,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/node.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/node.svg",
+      "sha256": "97dbd78fc8a6e96c5ec26ebca1f70ce476cc5e0584e1a89bc24d87f031eb83a8",
+      "bytes": 156,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/phase-shifter-arrow.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-arrow.svg",
+      "sha256": "1d5dd4d03936a90fa2a3dd69eb9c8cc73d7a636cc3da0ef2c304a4c8d9cce3fe",
+      "bytes": 152,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/phase-shifter-winding1.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-winding1.svg",
+      "sha256": "ed9fa64f4d683601acf0813df002273e81a1679da5d402322998ab6c068859a3",
+      "bytes": 144,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/phase-shifter-winding2.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/phase-shifter-winding2.svg",
+      "sha256": "3ca62bb86ec18a2aa811fc4516ec14316a3e80aab56b64565df03257436bcbd9",
+      "bytes": 143,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/svc.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/svc.svg",
+      "sha256": "85e128e6a4d320d86810482fb3137634dcfd46cb58bb12703dbd6479f5072b44",
+      "bytes": 361,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/unknown-component.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/unknown-component.svg",
+      "sha256": "d6c7af0fec743a0c0de1bb94b23df7b5f5ba76257a618e131de94cc852ed07af",
+      "bytes": 383,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/powsybl/vsc.svg",
+      "source_id": "powsybl",
+      "url": "https://raw.githubusercontent.com/powsybl/powsybl-diagram/952186b5b34d1e4e472a04fb663b3654b54e3022/single-line-diagram/single-line-diagram-core/src/main/resources/ConvergenceLibrary/vsc.svg",
+      "sha256": "7e1525e89f3f0060b8449c9d3b1d2bcb28a3ffca54e8364c20d6960042eb7811",
+      "bytes": 189,
+      "licence": "MPL-2.0"
+    },
+    {
+      "path": "upstream/send/metadata.json",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/articles/21618342/versions/1",
+      "sha256": "709e5994fb1270bd213b59d5dac055bf13b9338032674fd159dcf45446d8ced0",
+      "bytes": 5122,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "path": "upstream/send/send_network_dsse.zip",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "016e94fc5fb4763b76958b23054c3de07a1b2b1b5ca2291a649f94e6edf3257a",
+      "bytes": 4032,
+      "licence": "CC-BY-4.0"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/buscoords.csv",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "b8a7e94e01eed295ed7920c43bd33dd6a353172b90801bbca127b775ed4f60d0",
+      "bytes": 1552,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/buscoords.csv"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/generators_dsse.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "0d1738c2fd10683fbf9e2d93492852a237ad1db4a729338c78dca29c19e1bbc6",
+      "bytes": 285,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/generators_dsse.dss"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/linecodes.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "62bd64352297f0c938265aab68708d64d797d3a5dfe89a7aa5a8e28324c583a1",
+      "bytes": 1256,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/linecodes.dss"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/lines_dsse.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "f96f230477eb9c22934b9ea86e53d3533858f9969fde7cfcd3324e0f7a86ba4c",
+      "bytes": 3205,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/lines_dsse.dss"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/loads_dsse.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "a2f65ec16f52e83d2b53cd08dadb7ea7a68de7b65b1c43961f07393c983ac880",
+      "bytes": 2371,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/loads_dsse.dss"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/master_dsse.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "86d635df4e6d86f3d8b12a4fc632e3f77ea6b75238ffd0c9571bd6aa27aa1b40",
+      "bytes": 1067,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/master_dsse.dss"
+    },
+    {
+      "path": "upstream/send/send_network_dsse/xfmrs_dsse.dss",
+      "source_id": "send",
+      "url": "https://api.figshare.com/v2/file/download/38313285",
+      "sha256": "b31ed1cd905c7555d2d0e28d86e38ffa8446dbecdea54138fad49f923133e151",
+      "bytes": 2282,
+      "licence": "CC-BY-4.0",
+      "archive_member": "send_network_dsse/xfmrs_dsse.dss"
+    }
+  ]
+}

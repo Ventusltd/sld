@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "kind": "declared-bounding-box-layout-input",
+  "library_sha256": "20009f16dd31511436c7b433257ccab2dd7d1613cb8d603c7cee95292b54fa08",
+  "components": [
+    {
+      "id": "ARROW_ACTIVE",
+      "width": 10.0,
+      "height": 10.0
+    },
+    {
+      "id": "ARROW_CURRENT",
+      "width": 10.0,
+      "height": 10.0
+    },
+    {
+      "id": "ARROW_REACTIVE",
+      "width": 10.0,
+      "height": 10.0
+    },
+    {
+      "id": "BATTERY",
+      "width": 16.0,
+      "height": 10.0
+    },
+    {
+      "id": "BREAKER",
+      "width": 20.0,
+      "height": 20.0
+    },
+    {
+      "id": "BUS_CONNECTION",
+      "width": 8.0,
+      "height": 8.0
+    },
+    {
+      "id": "CAPACITOR",
+      "width": 12.0,
+      "height": 12.0
+    },
+    {
+      "id": "DISCONNECTOR",
+      "width": 8.0,
+      "height": 8.0
+    },
+    {
+      "id": "FLASH",
+      "width": 10.0,
+      "height": 15.0
+    },
+    {
+      "id": "GENERATOR",
+      "width": 12.0,
+      "height": 12.0
+    },
+    {
+      "id": "GROUND",
+      "width": 20.0,
+      "height": 20.0
+    },
+    {
+      "id": "GROUND_DISCONNECTION",
+      "width": 56.0,
+      "height": 20.0
+    },
+    {
+      "id": "INDUCTOR",
+      "width": 15.0,
+      "height": 9.0
+    },
+    {
+      "id": "LCC_CONVERTER_STATION",
+      "width": 16.0,
+      "height": 8.0
+    },
+    {
+      "id": "LOAD",
+      "width": 16.0,
+      "height": 9.0
+    },
+    {
+      "id": "LOAD_BREAK_SWITCH",
+      "width": 20.0,
+      "height": 20.0
+    },
+    {
+      "id": "LOCK",
+      "width": 12.0,
+      "height": 12.0
+    },
+    {
+      "id": "NODE",
+      "width": 8.0,
+      "height": 8.0
+    },
+    {
+      "id": "PHASE_SHIFT_TRANSFORMER",
+      "width": 14.0,
+      "height": 15.0
+    },
+    {
+      "id": "STATIC_VAR_COMPENSATOR",
+      "width": 12.0,
+      "height": 12.0
+    },
+    {
+      "id": "TEE_POINT",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_2",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_2_3",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_1_3",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_2",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_2_3",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "THREE_WINDINGS_TRANSFORMER_PST_3",
+      "width": 16.0,
+      "height": 24.0
+    },
+    {
+      "id": "TWO_WINDINGS_TRANSFORMER",
+      "width": 10.0,
+      "height": 15.0
+    },
+    {
+      "id": "UNKNOWN_COMPONENT",
+      "width": 20.0,
+      "height": 20.0
+    },
+    {
+      "id": "VALUE_CURRENT",
+      "width": 10.0,
+      "height": 10.0
+    },
+    {
+      "id": "VALUE_PERMANENT_LIMIT_PERCENTAGE",
+      "width": 10.0,
+      "height": 10.0
+    },
+    {
+      "id": "VSC_CONVERTER_STATION",
+      "width": 16.0,
+      "height": 8.0
+    }
+  ],
+  "statuses": {
+    "0": "separated",
+    "1": "touching",
+    "2": "overlapping"
+  },
+  "production_enabled": false,
+  "scope": "Declared bounding boxes only; no electrical approval, routing, SVG ink or label collision certification."
+}
