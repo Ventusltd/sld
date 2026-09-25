@@ -28,7 +28,7 @@
       "separated": 1207487220,
       "touching": 283424,
       "overlapping": 4383212,
-      "seconds": 0.8073718000086956
+      "seconds": 0.8456786000169814
     },
     {
       "gap": 2,
@@ -37,7 +37,7 @@
       "separated": 1206261044,
       "touching": 320416,
       "overlapping": 5572396,
-      "seconds": 0.8039359000395052
+      "seconds": 0.8611265000072308
     },
     {
       "gap": 4,
@@ -46,9 +46,9 @@
       "separated": 1204886900,
       "touching": 357408,
       "overlapping": 6909548,
-      "seconds": 0.8373479999718256
+      "seconds": 0.8395434000412934
     }
   ],
-  "setup_seconds": 0.40335109998704866,
-  "whole_seconds": 2.8628882999764755
+  "setup_seconds": 0.4423815999762155,
+  "whole_seconds": 2.999162799969781
 }
