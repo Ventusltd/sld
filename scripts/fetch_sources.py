@@ -179,7 +179,7 @@ def acquire(config, output, accept_first=False):
         path.write_bytes(data)
     lock = {"schema_version": "1.0", "files": records}
     output.mkdir(parents=True, exist_ok=True)
-    lock_path.write_text(json.dumps(lock, indent=2) + "\n", encoding="utf-8")
+    lock_path.write_text(json.dumps(lock, indent=2) + "\n", encoding="utf-8", newline="\n")
     return lock
 
 

@@ -48,7 +48,7 @@ def main():
     args = parser.parse_args()
     result = build(json.loads(args.config.read_text(encoding="utf-8")), args.data)
     path = args.data / "library.json"
-    path.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     print(f"Built {path}: {result['counts']}")
 
 

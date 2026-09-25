@@ -129,7 +129,7 @@ def main():
                   production_enabled=False,
                   scope='Declared bounding boxes only; no electrical approval, routing, SVG ink or label collision certification.')
     photon_path = args.out / 'photon-library.json'
-    photon_path.write_text(json.dumps(photon,indent=2)+'\n',encoding='utf-8')
+    photon_path.write_text(json.dumps(photon,indent=2)+'\n',encoding='utf-8', newline='\n')
     receipt = dict(accepted=True, scope=photon['scope'], device=cp.cuda.runtime.getDeviceProperties(0)['name'].decode(),
                    cupy_version=cp.__version__, cuda_runtime=cp.cuda.runtime.runtimeGetVersion(),
                    library_sha256=digest(args.library), script_sha256=digest(Path(__file__)),
@@ -139,7 +139,7 @@ def main():
                    grid=args.grid, pitch=.5, component_count=n, excluded_component_count=len(components)-n,
                    unique_cases=total*len(rows), iterations=rows, setup_seconds=setup_seconds,
                    whole_seconds=time.perf_counter()-started)
-    receipt_path.write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
+    receipt_path.write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8', newline='\n')
     print(json.dumps({'accepted':True,'unique_cases':receipt['unique_cases'],'whole_seconds':receipt['whole_seconds']}),flush=True)
 
 if __name__ == '__main__':
